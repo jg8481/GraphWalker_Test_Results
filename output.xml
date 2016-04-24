@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20160424 01:28:52.807" generator="Robot 3.0 (Python 2.7.11 on win32)">
+<robot generated="20160424 01:35:08.358" generator="Robot 3.0 (Python 2.7.11 on win32)">
 <suite source="C:\GITRepo\GraphWalker_Test_Results2\Analyze_GraphWalker_Results.robot" id="s1" name="Analyze GraphWalker Results">
 <test id="s1-t1" name="This step retrieves the contents of the Graphwalker log file and adds it to the Robot Framework Results File.">
 <kw name="Get Log Contents">
@@ -11,23 +11,23 @@
 <assign>
 <var>${CONTENTS}</var>
 </assign>
-<msg timestamp="20160424 01:28:52.865" html="yes" level="INFO">Getting file '&lt;a href="file://C:\GITRepo\GraphWalker_Test_Results2\graphwalker_analysis.txt"&gt;C:\GITRepo\GraphWalker_Test_Results2\graphwalker_analysis.txt&lt;/a&gt;'.</msg>
-<msg timestamp="20160424 01:28:52.865" level="INFO">${CONTENTS} = Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+<msg timestamp="20160424 01:35:08.429" html="yes" level="INFO">Getting file '&lt;a href="file://C:\GITRepo\GraphWalker_Test_Results2\graphwalker_analysis.txt"&gt;C:\GITRepo\GraphWalker_Test_Results2\graphwalker_analysis.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20160424 01:35:08.429" level="INFO">${CONTENTS} = Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
 Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match....</msg>
-<status status="PASS" endtime="20160424 01:28:52.865" starttime="20160424 01:28:52.865"></status>
+<status status="PASS" endtime="20160424 01:35:08.430" starttime="20160424 01:35:08.429"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${CONTENTS}</arg>
 </arguments>
-<msg timestamp="20160424 01:28:52.865" level="INFO">${CONTENTS} = Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+<msg timestamp="20160424 01:35:08.430" level="INFO">${CONTENTS} = Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
 Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match....</msg>
-<status status="PASS" endtime="20160424 01:28:52.865" starttime="20160424 01:28:52.865"></status>
+<status status="PASS" endtime="20160424 01:35:08.430" starttime="20160424 01:35:08.430"></status>
 </kw>
-<status status="PASS" endtime="20160424 01:28:52.865" starttime="20160424 01:28:52.865"></status>
+<status status="PASS" endtime="20160424 01:35:08.430" starttime="20160424 01:35:08.428"></status>
 </kw>
-<status status="PASS" endtime="20160424 01:28:52.865" critical="yes" starttime="20160424 01:28:52.865"></status>
+<status status="PASS" endtime="20160424 01:35:08.431" critical="yes" starttime="20160424 01:35:08.427"></status>
 </test>
 <test id="s1-t2" name="This step analyzes the contents of the Graphwalker log file and displays the output of the v_MemberLoginOverviewHomePage Test.">
 <kw name="Analyze v_MemberLoginOverviewHomePage">
@@ -37,14 +37,14 @@ Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Imag
 <arg>${CONTENTS}</arg>
 <arg>Failure: v_MemberLoginOverviewHomePage failed</arg>
 </arguments>
-<status status="PASS" endtime="20160424 01:28:52.865" starttime="20160424 01:28:52.865"></status>
+<status status="PASS" endtime="20160424 01:35:08.433" starttime="20160424 01:35:08.432"></status>
 </kw>
-<status status="PASS" endtime="20160424 01:28:52.865" starttime="20160424 01:28:52.865"></status>
+<status status="PASS" endtime="20160424 01:35:08.433" starttime="20160424 01:35:08.432"></status>
 </kw>
 <tags>
 <tag>Analyze the Member Login Overview HomePage Test Result</tag>
 </tags>
-<status status="PASS" endtime="20160424 01:28:52.865" critical="yes" starttime="20160424 01:28:52.865"></status>
+<status status="PASS" endtime="20160424 01:35:08.433" critical="yes" starttime="20160424 01:35:08.431"></status>
 </test>
 <test id="s1-t3" name="This step analyzes the contents of the Graphwalker log file and displays the output of the v_ErrorPage Test.">
 <kw name="Analyze v_ErrorPage">
@@ -54,17 +54,17 @@ Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Imag
 <arg>${CONTENTS}</arg>
 <arg>Failure: v_ErrorPage failed</arg>
 </arguments>
-<msg timestamp="20160424 01:28:52.865" level="FAIL">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+<msg timestamp="20160424 01:35:08.435" level="FAIL">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
 Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match.
 ' contains 'Failure: v_ErrorPage failed'</msg>
-<status status="FAIL" endtime="20160424 01:28:52.865" starttime="20160424 01:28:52.865"></status>
+<status status="FAIL" endtime="20160424 01:35:08.435" starttime="20160424 01:35:08.434"></status>
 </kw>
-<status status="FAIL" endtime="20160424 01:28:52.865" starttime="20160424 01:28:52.865"></status>
+<status status="FAIL" endtime="20160424 01:35:08.435" starttime="20160424 01:35:08.434"></status>
 </kw>
 <tags>
 <tag>Analyze the Error Page Test Result</tag>
 </tags>
-<status status="FAIL" endtime="20160424 01:28:52.865" critical="yes" starttime="20160424 01:28:52.865">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+<status status="FAIL" endtime="20160424 01:35:08.435" critical="yes" starttime="20160424 01:35:08.433">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
 Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match.
 ' contains 'Failure: v_ErrorPage failed'</status>
 </test>
@@ -76,21 +76,21 @@ Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Imag
 <arg>${CONTENTS}</arg>
 <arg>Failure: v_WebsiteHomePage failed</arg>
 </arguments>
-<msg timestamp="20160424 01:28:52.865" level="FAIL">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+<msg timestamp="20160424 01:35:08.437" level="FAIL">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
 Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match.
 ' contains 'Failure: v_WebsiteHomePage failed'</msg>
-<status status="FAIL" endtime="20160424 01:28:52.865" starttime="20160424 01:28:52.865"></status>
+<status status="FAIL" endtime="20160424 01:35:08.438" starttime="20160424 01:35:08.437"></status>
 </kw>
-<status status="FAIL" endtime="20160424 01:28:52.865" starttime="20160424 01:28:52.865"></status>
+<status status="FAIL" endtime="20160424 01:35:08.438" starttime="20160424 01:35:08.437"></status>
 </kw>
 <tags>
 <tag>Analyze the Website Home Page Test Result</tag>
 </tags>
-<status status="FAIL" endtime="20160424 01:28:52.865" critical="yes" starttime="20160424 01:28:52.865">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+<status status="FAIL" endtime="20160424 01:35:08.438" critical="yes" starttime="20160424 01:35:08.436">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
 Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match.
 ' contains 'Failure: v_WebsiteHomePage failed'</status>
 </test>
-<status status="FAIL" endtime="20160424 01:28:52.865" starttime="20160424 01:28:52.807"></status>
+<status status="FAIL" endtime="20160424 01:35:08.439" starttime="20160424 01:35:08.373"></status>
 </suite>
 <statistics>
 <total>
