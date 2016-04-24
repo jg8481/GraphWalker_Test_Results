@@ -1,0 +1,2 @@
+Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match.

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160424 00:57:10.534" generator="Robot 3.0 (Python 2.7.11 on win32)">
+<suite source="C:\GITRepo\GraphWalker_Test_Results2\Analyze_GraphWalker_Results.robot" id="s1" name="Analyze GraphWalker Results">
+<test id="s1-t1" name="This step retrieves the contents of the Graphwalker log file and adds it to the Robot Framework Results File.">
+<kw name="Get Log Contents">
+<kw name="Get File" library="OperatingSystem">
+<doc>Returns the contents of a specified file.</doc>
+<arguments>
+<arg>graphwalker_analysis.txt</arg>
+</arguments>
+<assign>
+<var>${CONTENTS}</var>
+</assign>
+<msg timestamp="20160424 00:57:10.712" html="yes" level="INFO">Getting file '&lt;a href="file://C:\GITRepo\GraphWalker_Test_Results2\graphwalker_analysis.txt"&gt;C:\GITRepo\GraphWalker_Test_Results2\graphwalker_analysis.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20160424 00:57:10.713" level="INFO">${CONTENTS} = Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match....</msg>
+<status status="PASS" endtime="20160424 00:57:10.713" starttime="20160424 00:57:10.712"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${CONTENTS}</arg>
+</arguments>
+<msg timestamp="20160424 00:57:10.715" level="INFO">${CONTENTS} = Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match....</msg>
+<status status="PASS" endtime="20160424 00:57:10.715" starttime="20160424 00:57:10.714"></status>
+</kw>
+<status status="PASS" endtime="20160424 00:57:10.715" starttime="20160424 00:57:10.711"></status>
+</kw>
+<status status="PASS" endtime="20160424 00:57:10.715" critical="yes" starttime="20160424 00:57:10.709"></status>
+</test>
+<test id="s1-t2" name="This step analyzes the contents of the Graphwalker log file and displays the output of the v_MemberLoginOverviewHomePage Test.">
+<kw name="Analyze v_MemberLoginOverviewHomePage">
+<kw name="Should Not Contain" library="BuiltIn">
+<doc>Fails if ``container`` contains ``item`` one or more times.</doc>
+<arguments>
+<arg>${CONTENTS}</arg>
+<arg>Failure: v_MemberLoginOverviewHomePage failed</arg>
+</arguments>
+<status status="PASS" endtime="20160424 00:57:10.727" starttime="20160424 00:57:10.727"></status>
+</kw>
+<status status="PASS" endtime="20160424 00:57:10.728" starttime="20160424 00:57:10.726"></status>
+</kw>
+<tags>
+<tag>Analyze the Member Login Overview HomePage Test Result</tag>
+</tags>
+<status status="PASS" endtime="20160424 00:57:10.728" critical="yes" starttime="20160424 00:57:10.722"></status>
+</test>
+<test id="s1-t3" name="This step analyzes the contents of the Graphwalker log file and displays the output of the v_ErrorPage Test.">
+<kw name="Analyze v_ErrorPage">
+<kw name="Should Not Contain" library="BuiltIn">
+<doc>Fails if ``container`` contains ``item`` one or more times.</doc>
+<arguments>
+<arg>${CONTENTS}</arg>
+<arg>Failure: v_ErrorPage failed</arg>
+</arguments>
+<msg timestamp="20160424 00:57:10.732" level="FAIL">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match.
+' contains 'Failure: v_ErrorPage failed'</msg>
+<status status="FAIL" endtime="20160424 00:57:10.732" starttime="20160424 00:57:10.731"></status>
+</kw>
+<status status="FAIL" endtime="20160424 00:57:10.733" starttime="20160424 00:57:10.730"></status>
+</kw>
+<tags>
+<tag>Analyze the Error Page Test Result</tag>
+</tags>
+<status status="FAIL" endtime="20160424 00:57:10.733" critical="yes" starttime="20160424 00:57:10.729">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match.
+' contains 'Failure: v_ErrorPage failed'</status>
+</test>
+<test id="s1-t4" name="This step analyzes the contents of the Graphwalker log file and displays the output of the v_WebsiteHomePage Test.">
+<kw name="Analyze v_WebsiteHomePage">
+<kw name="Should Not Contain" library="BuiltIn">
+<doc>Fails if ``container`` contains ``item`` one or more times.</doc>
+<arguments>
+<arg>${CONTENTS}</arg>
+<arg>Failure: v_WebsiteHomePage failed</arg>
+</arguments>
+<msg timestamp="20160424 00:57:10.737" level="FAIL">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match.
+' contains 'Failure: v_WebsiteHomePage failed'</msg>
+<status status="FAIL" endtime="20160424 00:57:10.738" starttime="20160424 00:57:10.737"></status>
+</kw>
+<status status="FAIL" endtime="20160424 00:57:10.738" starttime="20160424 00:57:10.736"></status>
+</kw>
+<tags>
+<tag>Analyze the Website Home Page Test Result</tag>
+</tags>
+<status status="FAIL" endtime="20160424 00:57:10.738" critical="yes" starttime="20160424 00:57:10.734">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match.
+' contains 'Failure: v_WebsiteHomePage failed'</status>
+</test>
+<status status="FAIL" endtime="20160424 00:57:10.745" starttime="20160424 00:57:10.616"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="2">Critical Tests</stat>
+<stat fail="2" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Analyze the Error Page Test Result</stat>
+<stat fail="0" pass="1">Analyze the Member Login Overview HomePage Test Result</stat>
+<stat fail="1" pass="0">Analyze the Website Home Page Test Result</stat>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="Analyze GraphWalker Results" pass="2">Analyze GraphWalker Results</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
