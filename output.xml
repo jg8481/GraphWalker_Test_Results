@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20160430 19:28:55.237" generator="Robot 3.0 (Python 2.7.11 on win32)">
+<robot generated="20160430 19:45:00.327" generator="Robot 3.0 (Python 2.7.11 on win32)">
 <suite source="C:\GITRepo\GraphWalker_Test_Results2\Analyze_GraphWalker_Results.robot" id="s1" name="Analyze GraphWalker Results">
 <test id="s1-t1" name="This step retrieves the contents of the Graphwalker log file and adds it to the Robot Framework Results File.">
 <kw name="Get Log Contents">
@@ -11,25 +11,23 @@
 <assign>
 <var>${CONTENTS}</var>
 </assign>
-<msg timestamp="20160430 19:28:55.295" html="yes" level="INFO">Getting file '&lt;a href="file://C:\GITRepo\GraphWalker_Test_Results2\graphwalker_analysis.txt"&gt;C:\GITRepo\GraphWalker_Test_Results2\graphwalker_analysis.txt&lt;/a&gt;'.</msg>
-<msg timestamp="20160430 19:28:55.296" level="INFO">${CONTENTS} = Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
-19:26:44.497 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
-Running: e_L...</msg>
-<status status="PASS" endtime="20160430 19:28:55.296" starttime="20160430 19:28:55.295"></status>
+<msg timestamp="20160430 19:45:00.383" html="yes" level="INFO">Getting file '&lt;a href="file://C:\GITRepo\GraphWalker_Test_Results2\graphwalker_analysis.txt"&gt;C:\GITRepo\GraphWalker_Test_Results2\graphwalker_analysis.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20160430 19:45:00.383" level="INFO">${CONTENTS} = Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match....</msg>
+<status status="PASS" endtime="20160430 19:45:00.383" starttime="20160430 19:45:00.382"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${CONTENTS}</arg>
 </arguments>
-<msg timestamp="20160430 19:28:55.297" level="INFO">${CONTENTS} = Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
-19:26:44.497 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
-Running: e_L...</msg>
-<status status="PASS" endtime="20160430 19:28:55.297" starttime="20160430 19:28:55.296"></status>
+<msg timestamp="20160430 19:45:00.384" level="INFO">${CONTENTS} = Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match....</msg>
+<status status="PASS" endtime="20160430 19:45:00.384" starttime="20160430 19:45:00.383"></status>
 </kw>
-<status status="PASS" endtime="20160430 19:28:55.297" starttime="20160430 19:28:55.295"></status>
+<status status="PASS" endtime="20160430 19:45:00.384" starttime="20160430 19:45:00.382"></status>
 </kw>
-<status status="PASS" endtime="20160430 19:28:55.297" critical="yes" starttime="20160430 19:28:55.294"></status>
+<status status="PASS" endtime="20160430 19:45:00.384" critical="yes" starttime="20160430 19:45:00.381"></status>
 </test>
 <test id="s1-t2" name="This step analyzes the contents of the Graphwalker log file and displays the output of the v_MemberLoginOverviewHomePage Test.">
 <kw name="Analyze v_MemberLoginOverviewHomePage">
@@ -39,14 +37,14 @@ Running: e_L...</msg>
 <arg>${CONTENTS}</arg>
 <arg>Failure: v_MemberLoginOverviewHomePage failed</arg>
 </arguments>
-<status status="PASS" endtime="20160430 19:28:55.299" starttime="20160430 19:28:55.299"></status>
+<status status="PASS" endtime="20160430 19:45:00.386" starttime="20160430 19:45:00.386"></status>
 </kw>
-<status status="PASS" endtime="20160430 19:28:55.300" starttime="20160430 19:28:55.299"></status>
+<status status="PASS" endtime="20160430 19:45:00.386" starttime="20160430 19:45:00.385"></status>
 </kw>
 <tags>
 <tag>Analyze the Member Login Overview HomePage Test Result</tag>
 </tags>
-<status status="PASS" endtime="20160430 19:28:55.300" critical="yes" starttime="20160430 19:28:55.298"></status>
+<status status="PASS" endtime="20160430 19:45:00.387" critical="yes" starttime="20160430 19:45:00.385"></status>
 </test>
 <test id="s1-t3" name="This step analyzes the contents of the Graphwalker log file and displays the output of the v_ErrorPage Test.">
 <kw name="Analyze v_ErrorPage">
@@ -56,34 +54,18 @@ Running: e_L...</msg>
 <arg>${CONTENTS}</arg>
 <arg>Failure: v_ErrorPage failed</arg>
 </arguments>
-<msg timestamp="20160430 19:28:55.302" level="FAIL">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
-19:26:44.497 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
-Running: e_LoginFailure.
+<msg timestamp="20160430 19:45:00.389" level="FAIL">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
 Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match.
-19:27:04.378 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
-19:27:12.428 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_AnotherLoginFailure
-Running: e_AnotherLoginFailure.
-19:27:17.093 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_AnotherLoginFailure
-19:27:59.231 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
-19:28:07.341 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_AnotherLoginFailure
 ' contains 'Failure: v_ErrorPage failed'</msg>
-<status status="FAIL" endtime="20160430 19:28:55.302" starttime="20160430 19:28:55.301"></status>
+<status status="FAIL" endtime="20160430 19:45:00.389" starttime="20160430 19:45:00.388"></status>
 </kw>
-<status status="FAIL" endtime="20160430 19:28:55.302" starttime="20160430 19:28:55.301"></status>
+<status status="FAIL" endtime="20160430 19:45:00.389" starttime="20160430 19:45:00.388"></status>
 </kw>
 <tags>
 <tag>Analyze the Error Page Test Result</tag>
 </tags>
-<status status="FAIL" endtime="20160430 19:28:55.302" critical="yes" starttime="20160430 19:28:55.300">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
-19:26:44.497 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
-Running: e_LoginFailure.
+<status status="FAIL" endtime="20160430 19:45:00.389" critical="yes" starttime="20160430 19:45:00.387">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
 Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match.
-19:27:04.378 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
-19:27:12.428 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_AnotherLoginFailure
-Running: e_AnotherLoginFailure.
-19:27:17.093 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_AnotherLoginFailure
-19:27:59.231 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
-19:28:07.341 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_AnotherLoginFailure
 ' contains 'Failure: v_ErrorPage failed'</status>
 </test>
 <test id="s1-t4" name="This step analyzes the contents of the Graphwalker log file and displays the output of the v_WebsiteHomePage Test.">
@@ -94,37 +76,21 @@ Running: e_AnotherLoginFailure.
 <arg>${CONTENTS}</arg>
 <arg>Failure: v_WebsiteHomePage failed</arg>
 </arguments>
-<msg timestamp="20160430 19:28:55.305" level="FAIL">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
-19:26:44.497 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
-Running: e_LoginFailure.
+<msg timestamp="20160430 19:45:00.391" level="FAIL">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
 Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match.
-19:27:04.378 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
-19:27:12.428 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_AnotherLoginFailure
-Running: e_AnotherLoginFailure.
-19:27:17.093 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_AnotherLoginFailure
-19:27:59.231 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
-19:28:07.341 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_AnotherLoginFailure
 ' contains 'Failure: v_WebsiteHomePage failed'</msg>
-<status status="FAIL" endtime="20160430 19:28:55.305" starttime="20160430 19:28:55.304"></status>
+<status status="FAIL" endtime="20160430 19:45:00.391" starttime="20160430 19:45:00.391"></status>
 </kw>
-<status status="FAIL" endtime="20160430 19:28:55.305" starttime="20160430 19:28:55.304"></status>
+<status status="FAIL" endtime="20160430 19:45:00.391" starttime="20160430 19:45:00.390"></status>
 </kw>
 <tags>
 <tag>Analyze the Website Home Page Test Result</tag>
 </tags>
-<status status="FAIL" endtime="20160430 19:28:55.305" critical="yes" starttime="20160430 19:28:55.303">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
-19:26:44.497 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
-Running: e_LoginFailure.
+<status status="FAIL" endtime="20160430 19:45:00.392" critical="yes" starttime="20160430 19:45:00.390">'Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
 Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match.
-19:27:04.378 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
-19:27:12.428 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_AnotherLoginFailure
-Running: e_AnotherLoginFailure.
-19:27:17.093 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_AnotherLoginFailure
-19:27:59.231 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
-19:28:07.341 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_AnotherLoginFailure
 ' contains 'Failure: v_WebsiteHomePage failed'</status>
 </test>
-<status status="FAIL" endtime="20160430 19:28:55.306" starttime="20160430 19:28:55.241"></status>
+<status status="FAIL" endtime="20160430 19:45:00.392" starttime="20160430 19:45:00.331"></status>
 </suite>
 <statistics>
 <total>
