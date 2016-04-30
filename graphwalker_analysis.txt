@@ -1,2 +1,9 @@
 Failure: v_WebsiteHomePage failed to verify that the Home Page displayed. Sikuli Image does not match.
+18:56:36.663 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
+Running: e_LoginFailure.
 Failure: v_ErrorPage failed to verify that the Error Page displayed. Sikuli Image does not match.
+Failure: e_LogOut failed to complete.
+18:57:10.060 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
+18:57:18.508 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_AnotherLoginFailure
+Running: e_AnotherLoginFailure.
+18:59:02.402 [main] DEBUG o.g.core.machine.ExecutionContext - Execute e_LoginFailure
