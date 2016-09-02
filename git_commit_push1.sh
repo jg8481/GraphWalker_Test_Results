@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 ##REPO_DIR=/Users/joshuagorospe/GraphWalker_Test_Results2
 #cd ~/GraphWalker_Test_Results2
 git add .
